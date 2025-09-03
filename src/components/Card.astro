@@ -1,5 +1,5 @@
 ---
-const { title, price } = Astro.props;
+const { title, price, highlight = false } = Astro.props;
 ---
 
 <article class="flex flex-col justify-center items-center gap-6 w-70 px-5 py-10 bg-blue-400 font-family: var(--font-sans) rounded-lg">
@@ -13,9 +13,9 @@ const { title, price } = Astro.props;
         {price}
     </p>
     <ul class="flex flex-col items-center gap-2 text-text-w w-full">
-        <li class="text-sm border-t-1 py-2 w-full text-center">1 TB storage</li>
-        <li class="text-sm border-t-1 py-2 w-full text-center">5 users allowed</li>
-        <li class="text-sm border-t-1 py-2 w-full text-center">Send up to 10gb</li>
+        <li class="text-sm border-t py-2 w-full text-center">1 TB storage</li>
+        <li class="text-sm border-t py-2 w-full text-center">5 users allowed</li>
+        <li class="text-sm border-t py-2 w-full text-center">Send up to 10gb</li>
     </ul>
     <button class="w-full uppercase border-1 text-text-w border-white rounded-lg px-8 py-2 font-medium text-xs tracking-widest">Learn more</button>
 </article>
